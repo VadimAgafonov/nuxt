@@ -1,5 +1,6 @@
 import config from "~/assets/styles/export.module.scss";
 
+/* eslint-disable  @typescript-eslint/no-extraneous-class */
 /**
  * Класс для работы с общим конфигом стилей
  */
