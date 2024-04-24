@@ -17,6 +17,7 @@ export default defineNuxtConfig({
 	},
 	modules: [
 		"@nuxt/eslint",
+		"@nuxtjs/stylelint-module",
 	],
 	eslint: {
 		checker: true,

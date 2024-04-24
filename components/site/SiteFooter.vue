@@ -11,9 +11,9 @@ const className: string = "b-site-footer";
 <style lang="scss" scoped>
 @use "~/assets/styles/base.scss" as *;
 
-$className: "b-site-header";
+$class-name: "b-site-header";
 
-.#{$className} {
+.#{$class-name} {
 	display: flex;
 	align-items: center;
 	width: 100%;
