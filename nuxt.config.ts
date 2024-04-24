@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     devServer: {
         port: 8080
     },
+    css: [
+        "~/assets/styles/app.scss",
+    ],
     imports: {
         // Отключение автоимпорта composables и utilities
         autoImport: false,

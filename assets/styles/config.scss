@@ -1,0 +1,63 @@
+// Базовые цвета
+$color-white: #fff;
+$color-black: #000;
+$color-red: red;
+$color-bisque: bisque;
+
+$site-breakpoints: (
+	mobile: 320px,
+	tablet: 768px,
+	middle: 1024px,
+	big: 1440px,
+	large: 1640px,
+	full: 1920px
+);
+
+// отступ контента СТРАНИЦЫ для разных брекпоинтов
+// работают через media-запрос min-width
+$content-offset-over-min: 20px;
+$content-offsets: (
+	mobile: 20px,
+	tablet: 40px,
+	middle: 60px,
+	big: 100px,
+	large: 100px,
+	full: 100px
+);
+
+// отступ для grid-container на разных брекпоинтах
+// работают через media-запрос min-width
+$gutter-size-over-min: 20px;
+$gutter-size: (
+	mobile: 10px,
+	tablet: 10px,
+	middle: 30px,
+	big: 30px,
+	large: 40px,
+	full: 40px
+);
+
+$body-text-color: $color-black;
+$body-background: $color-white;
+$body-font-color: $color-black;
+$body-font-family: "Geologica", arial, sans-serif;
+
+// Отступы
+$indents: (
+	green: (
+		"color": #11e934,
+		"sizes": (
+			"mobile": 60px,
+			"tablet": 80px,
+			"big": 100px,
+		),
+	),
+	red: (
+		"color": #f00,
+		"sizes": (
+			"mobile": 30px,
+			"tablet": 40px,
+			"big": 45px,
+		),
+	),
+);

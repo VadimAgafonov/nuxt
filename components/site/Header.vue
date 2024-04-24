@@ -9,6 +9,8 @@
 </template>
 
 <style lang="scss" scoped>
+    @use "~/assets/styles/base.scss" as *;
+
     $className: "b-header";
 
     .#{$className} {
@@ -16,6 +18,6 @@
         align-items: center;
         width: 100%;
         height: 200px;
-        background-color: bisque;
+        background-color: $color-bisque;
     }
 </style>
