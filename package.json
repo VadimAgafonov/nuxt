@@ -8,8 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test": "echo test",
-    "prepare": "husky"
+    "husky-prepare": "husky"
   },
   "dependencies": {
     "nuxt": "^3.11.2",
@@ -19,6 +18,7 @@
   "devDependencies": {
     "eslint": "^9.2.0",
     "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "normalize.css": "^8.0.1",
     "sass": "^1.77.0",
     "stylelint": "^16.5.0",
