@@ -14,19 +14,5 @@ export default defineNuxtConfig({
 	components: {
 		// Отключение автоимпорта компонентов
 		dirs: [],
-	},
-	modules: [
-		"@nuxt/eslint",
-		"@nuxtjs/stylelint-module",
-	],
-	eslint: {
-		checker: true,
-		config: {
-			stylistic: {
-				indent: "tab",
-				semi: true,
-				quotes: "double",
-			},
-		},
-	},
+	}
 });
