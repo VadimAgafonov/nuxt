@@ -9,10 +9,12 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "husky-prepare": "husky",
-    "lint": "stylelint '**/*.{scss,vue}'"
+    "lint": "stylelint '**/*.{scss,vue}'",
+    "prettier": "prettier . --write"
   },
   "dependencies": {
     "nuxt": "^3.11.2",
+    "prettier": "^3.2.5",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
