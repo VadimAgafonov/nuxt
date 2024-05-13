@@ -1,4 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
 
-# npx lint-staged
+node_string=$(grep "node" .workspace_config | awk '{print $ 2}')
+container=techart_nodejs_$node_string
+
+docker start $container
+docker exec -tw $(pwd) -u user $container bash -c "cd $(pwd); pwd; npx lint-staged"
