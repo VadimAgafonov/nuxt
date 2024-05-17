@@ -1,0 +1,29 @@
+@use "sass:map";
+@import "~/assets/styles/style.scss";
+
+// Отступы
+@each $name, $indent in $indents {
+	.debug-margin-#{$name + ""}-top,
+	.debug-margin-#{$name + ""}-bottom,
+	.debug-padding-#{$name + ""}-top,
+	.debug-padding-#{$name + ""}-bottom {
+		position: absolute;
+		pointer-events: none;
+		top: 0;
+		left: 0;
+		background-color: map.get($indent, "color");
+		opacity: 0.8;
+		height: map.get(map.get($indent, "sizes"), "mobile");
+
+		@each $size, $value in map.get($indent, "sizes") {
+			@include breakpoint($size) {
+				height: $value;
+			}
+		}
+	}
+}
+
+.indent-hidden {
+	opacity: 0;
+}
+

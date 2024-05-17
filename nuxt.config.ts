@@ -14,5 +14,13 @@ export default defineNuxtConfig({
 	components: {
 		// Отключение автоимпорта компонентов
 		dirs: [],
-	}
+	},
+	runtimeConfig: {
+		public: {
+			debug: process.env.NUXT_DEBUG_TOOLS
+		}
+	},
+	plugins: [
+		JSON.parse(process.env.NUXT_DEBUG_TOOLS || 'false') ? '~/plugins/debug/entry.ts' : undefined
+	].filter(Boolean)
 });

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const className: string = "b-site-footer";
+const className: string = "b-site-footer margin-red-bottom";
 </script>
 
 <template>
